@@ -1,0 +1,4 @@
+db.driver=org.h2.Driver
+db.url=jdbc:h2:lift_1_1_sample
+db.user=lift
+db.password=liftpass
