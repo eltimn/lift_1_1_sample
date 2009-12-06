@@ -9,7 +9,7 @@ package com.liftcode.snippet
  */
 
 import scala.xml.NodeSeq
-import net.liftweb.util._
+import net.liftweb.common._
 
 import model._
 

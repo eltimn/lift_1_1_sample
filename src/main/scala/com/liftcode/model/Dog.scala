@@ -1,10 +1,3 @@
-/*
- * Dog.scala
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
-
 package com.liftcode.model
 
 import net.liftweb._
@@ -17,4 +10,6 @@ class Dog extends LongKeyedMapper[Dog] with IdPK {
   object weight extends MappedInt(this)
 }
 
-object Dog extends Dog with LongKeyedMetaMapper[Dog]
+object Dog extends Dog with LongKeyedMetaMapper[Dog] {
+	override def dbDefaultConnectionIdentifier = bootstrap.liftweb.TwoDB
+}
